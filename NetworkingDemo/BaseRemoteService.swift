@@ -85,11 +85,21 @@ class BaseRemoteService: NSObject {
         components.host = self.host
         components.path = self.basePath + path
         if let queryParams = params {
-            components.queryItems = queryParams.map { (key, value) -> NSURLQueryItem in
-                return NSURLQueryItem(name: key, value: value)
+            if #available(iOS 8.0, *) {
+                components.queryItems = queryParams.map { (key, value) -> NSURLQueryItem in
+                    return NSURLQueryItem(name: key, value: value)
+                }
+                return components.URL!
+            } else {
+                let queryString = "?" + queryParams.map({ (key, value) -> String in
+                    return key + "=" + value
+                }).joinWithSeparator("&")
+                guard let interimUrl = components.URL?.absoluteString else {preconditionFailure("invalid irl")}
+                return NSURL(string: interimUrl + queryString)!
             }
+        } else {
+            return components.URL!
         }
-        return components.URL!
     }
     
     func nativeObject(data:NSData)->WebServiceResponse {

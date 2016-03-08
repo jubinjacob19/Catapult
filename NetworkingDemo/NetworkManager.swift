@@ -10,7 +10,7 @@ import UIKit
 
 private let sharedManager = NetworkManager()
 
-class NetworkManager: NSObject {
+final class NetworkManager: NSObject {
     private var myContext = 0
     class var sharedInstance: NetworkManager {
         return sharedManager
