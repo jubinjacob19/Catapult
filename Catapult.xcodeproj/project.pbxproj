@@ -19,7 +19,7 @@
 		77B84AC01C8E6812007ADEBD /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B84ABC1C8E6812007ADEBD /* AsyncOperation.swift */; };
 		77B84AC11C8E6812007ADEBD /* ReachablityOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B84ABD1C8E6812007ADEBD /* ReachablityOperation.swift */; };
 		77B84AC31C8E6812007ADEBD /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B84ABF1C8E6812007ADEBD /* NetworkOperation.swift */; };
-		77BD28C01C8E6F95002D8D08 /* BaseNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD28BF1C8E6F95002D8D08 /* BaseNetworkManager.swift */; };
+		77BD28C01C8E6F95002D8D08 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD28BF1C8E6F95002D8D08 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		77B84ABC1C8E6812007ADEBD /* AsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		77B84ABD1C8E6812007ADEBD /* ReachablityOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachablityOperation.swift; sourceTree = "<group>"; };
 		77B84ABF1C8E6812007ADEBD /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
-		77BD28BF1C8E6F95002D8D08 /* BaseNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkManager.swift; sourceTree = "<group>"; };
+		77BD28BF1C8E6F95002D8D08 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		77C90B681C64CB8D0016FFEE /* NetworkingDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkingDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,7 +143,7 @@
 		77B84AAC1C8E6776007ADEBD /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				77BD28BF1C8E6F95002D8D08 /* BaseNetworkManager.swift */,
+				77BD28BF1C8E6F95002D8D08 /* NetworkManager.swift */,
 				77B84AB81C8E67EA007ADEBD /* WebServices */,
 				77B84AB31C8E67AF007ADEBD /* Protocols */,
 				77B84AAF1C8E67A3007ADEBD /* BaseRemoteService.swift */,
@@ -311,7 +311,7 @@
 				77B84AB21C8E67A3007ADEBD /* BaseRemoteService.swift in Sources */,
 				776041FB1BBD086D005467B4 /* ViewController.swift in Sources */,
 				77B84AC31C8E6812007ADEBD /* NetworkOperation.swift in Sources */,
-				77BD28C01C8E6F95002D8D08 /* BaseNetworkManager.swift in Sources */,
+				77BD28C01C8E6F95002D8D08 /* NetworkManager.swift in Sources */,
 				77B84AC11C8E6812007ADEBD /* ReachablityOperation.swift in Sources */,
 				776041F91BBD086D005467B4 /* AppDelegate.swift in Sources */,
 				77B84AC01C8E6812007ADEBD /* AsyncOperation.swift in Sources */,

@@ -8,11 +8,11 @@
 
 import UIKit
 
-private let sharedManager = BaseNetworkManager()
+private let sharedManager = NetworkManager()
 
-class BaseNetworkManager: NSObject {
+class NetworkManager: NSObject {
     private var myContext = 0
-    class var sharedInstance: BaseNetworkManager {
+    class var sharedInstance: NetworkManager {
         return sharedManager
     }
     
