@@ -20,6 +20,8 @@
 		77B84AC11C8E6812007ADEBD /* ReachablityOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B84ABD1C8E6812007ADEBD /* ReachablityOperation.swift */; };
 		77B84AC31C8E6812007ADEBD /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B84ABF1C8E6812007ADEBD /* NetworkOperation.swift */; };
 		77BD28C01C8E6F95002D8D08 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BD28BF1C8E6F95002D8D08 /* NetworkManager.swift */; };
+		77CA6EC01C8E7213001A17AD /* CTNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CA6EBF1C8E7213001A17AD /* CTNetworkManager.swift */; };
+		77CA6EC11C8E7213001A17AD /* CTNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CA6EBF1C8E7213001A17AD /* CTNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,7 @@
 		77B84ABF1C8E6812007ADEBD /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		77BD28BF1C8E6F95002D8D08 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		77C90B681C64CB8D0016FFEE /* NetworkingDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkingDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		77CA6EBF1C8E7213001A17AD /* CTNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,7 @@
 				77B84AB81C8E67EA007ADEBD /* WebServices */,
 				77B84AB31C8E67AF007ADEBD /* Protocols */,
 				77B84AAF1C8E67A3007ADEBD /* BaseRemoteService.swift */,
+				77CA6EBF1C8E7213001A17AD /* CTNetworkManager.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -308,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CA6EC01C8E7213001A17AD /* CTNetworkManager.swift in Sources */,
 				77B84AB21C8E67A3007ADEBD /* BaseRemoteService.swift in Sources */,
 				776041FB1BBD086D005467B4 /* ViewController.swift in Sources */,
 				77B84AC31C8E6812007ADEBD /* NetworkOperation.swift in Sources */,
@@ -324,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7760420E1BBD086D005467B4 /* NetworkingDemoTests.swift in Sources */,
+				77CA6EC11C8E7213001A17AD /* CTNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
