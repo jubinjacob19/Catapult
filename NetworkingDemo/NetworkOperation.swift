@@ -9,12 +9,12 @@
 import UIKit
 
 class NetworkOperation: AsyncOperation {
-    var sessionTask : NSURLSessionDataTask?
+    var cancellableRequest : Cancellable?
     
     override func cancel() {
         if(executing) {
             print("session cancelled")
-            self.sessionTask?.cancel()
+            self.cancellableRequest?.cancelRequest()
         }
         super.cancel()
     }

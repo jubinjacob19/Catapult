@@ -34,14 +34,14 @@ class BaseRemoteService: NSObject {
         super.init()
     }
     
-    func GET(path name:String, params:Dictionary<String,String>, completion:Completion)->NSURLSessionDataTask {
+    func GET(path name:String, params:Dictionary<String,String>, completion:Completion)->Cancellable {
         let urlRequest : NSMutableURLRequest = NSMutableURLRequest(URL: self.URL(name, params: params))
         urlRequest.HTTPMethod = httpGet
         urlRequest.setValue(kJsonHeader, forHTTPHeaderField: kContentType)
         return genericHTTPRequest(urlRequest, completion: completion)
     }
     
-    func POST(path:String, queryParams:[String:String]?, postParams:[String:AnyObject], completion:Completion)->NSURLSessionDataTask {
+    func POST(path:String, queryParams:[String:String]?, postParams:[String:AnyObject], completion:Completion)->Cancellable {
         let urlRequest : NSMutableURLRequest = NSMutableURLRequest(URL: self.URL(path, params: queryParams))
         urlRequest.HTTPMethod = httpPost
         urlRequest.setValue(kJsonHeader, forHTTPHeaderField: kContentType)
@@ -50,7 +50,7 @@ class BaseRemoteService: NSObject {
         
     }
     
-    func genericHTTPRequest(urlRequest:NSURLRequest,completion:Completion)->NSURLSessionDataTask {
+    func genericHTTPRequest(urlRequest:NSURLRequest,completion:Completion)->Cancellable {
         let sessionConfig = NSURLSessionConfiguration.defaultSessionConfiguration()
         sessionConfig.allowsCellularAccess = true
         sessionConfig.HTTPMaximumConnectionsPerHost = 1

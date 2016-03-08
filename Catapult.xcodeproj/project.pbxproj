@@ -14,6 +14,7 @@
 		776042031BBD086D005467B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776042011BBD086D005467B4 /* LaunchScreen.storyboard */; };
 		7760420E1BBD086D005467B4 /* NetworkingDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7760420D1BBD086D005467B4 /* NetworkingDemoTests.swift */; };
 		776042191BBD086D005467B4 /* NetworkingDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776042181BBD086D005467B4 /* NetworkingDemoUITests.swift */; };
+		77A5657B1C8F3BE600B70E57 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A5657A1C8F3BE600B70E57 /* Cancellable.swift */; };
 		77B84AB21C8E67A3007ADEBD /* BaseRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B84AAF1C8E67A3007ADEBD /* BaseRemoteService.swift */; };
 		77B84AB61C8E67BC007ADEBD /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B84AB41C8E67BC007ADEBD /* Weather.swift */; };
 		77B84AC01C8E6812007ADEBD /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B84ABC1C8E6812007ADEBD /* AsyncOperation.swift */; };
@@ -55,6 +56,7 @@
 		776042141BBD086D005467B4 /* Catapult.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Catapult.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		776042181BBD086D005467B4 /* NetworkingDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingDemoUITests.swift; sourceTree = "<group>"; };
 		7760421A1BBD086D005467B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A5657A1C8F3BE600B70E57 /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
 		77B84AAF1C8E67A3007ADEBD /* BaseRemoteService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRemoteService.swift; sourceTree = "<group>"; };
 		77B84AB41C8E67BC007ADEBD /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		77B84ABC1C8E6812007ADEBD /* AsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
@@ -158,7 +160,7 @@
 		77B84AB31C8E67AF007ADEBD /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				77B84AB41C8E67BC007ADEBD /* Weather.swift */,
+				77A5657A1C8F3BE600B70E57 /* Cancellable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -166,6 +168,7 @@
 		77B84AB81C8E67EA007ADEBD /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
+				77B84AB41C8E67BC007ADEBD /* Weather.swift */,
 				77B84ABB1C8E6802007ADEBD /* Operations */,
 			);
 			name = WebServices;
@@ -312,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77A5657B1C8F3BE600B70E57 /* Cancellable.swift in Sources */,
 				77CA6EC01C8E7213001A17AD /* CTNetworkManager.swift in Sources */,
 				77B84AB21C8E67A3007ADEBD /* BaseRemoteService.swift in Sources */,
 				776041FB1BBD086D005467B4 /* ViewController.swift in Sources */,
